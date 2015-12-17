@@ -9,10 +9,8 @@ def isSorted(list):
 	return True
 
 def swap(list, i1, i2):
-	item1 = list[i1]
-	item2 = list[i2]
-	list[i1] = item2
-	list[i2] = item1
+	list[i1],list[i2] = list[i2],list[i1]
+
 # code from: https://stackoverflow.com/questions/889900/accurate-timing-of-functions-in-python
 
 @contextmanager
